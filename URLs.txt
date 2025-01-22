@@ -1,0 +1,38 @@
+//Cadastrar cliente
+URL = http://localhost/api/clientes/adicionar
+
+body{
+    {
+    "nome": "Marcos",
+    "email": "Marcoss@email.com",
+    "cidade": "Fortaleza",
+    "estado": "CE",
+    "telefone": "+5592994946507"
+    }
+}
+
+-------------------------------------
+//Listar
+URL = http://localhost/api/clientes/listar
+
+-------------------------------------
+//ListarUnico
+URL = http://localhost/api/clientes/listar/{id}
+
+-------------------------------------
+//Atualizar
+URL = http://localhost/api/clientes/atualizar/{id}
+
+body{
+    {
+    "nome": "Marcos",
+    "email": "Marcoss@email.com",
+    "cidade": "Fortaleza",
+    "estado": "CE",
+    "telefone": "+5592994946507"
+    }
+}
+
+-----------------------------------
+//Deletar
+URL = http://localhost/api/clientes/deletar/{id}

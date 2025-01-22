@@ -1,0 +1,9 @@
+# Habilitar mod_rewrite
+RewriteEngine On
+
+# Certificar-se de que a URL solicitada não corresponde a um arquivo ou diretório existente
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirecionar todas as requisições para o index.php
+RewriteRule ^(.*)$ index.php?path=$1 [QSA,L]
